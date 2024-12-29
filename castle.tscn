@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://1g37j455t5vl"]
+
+[ext_resource type="Texture2D" uid="uid://pee804cephy3" path="res://assets/Factions/Knights/Buildings/Castle/Castle_Red.png" id="1_6ieiq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n5fj5"]
+size = Vector2(289, 194)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 16)
+shape = SubResource("RectangleShape2D_n5fj5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6ieiq")
